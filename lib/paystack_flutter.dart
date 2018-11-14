@@ -1,13 +1,13 @@
 import 'dart:async';
-
 import 'package:flutter/services.dart';
 
-class PaystackFlutter {
-  static const MethodChannel _channel =
-      const MethodChannel('paystack_flutter');
+export 'card.dart';
+export 'transaction.dart';
 
-  static Future<String> get platformVersion async {
-    final String version = await _channel.invokeMethod('getPlatformVersion');
-    return version;
+class Paystack {
+  static const _methodChannel = const MethodChannel('paystack_flutter');
+
+  static Future<String> initialize(String paystackKey) async {
+    return _methodChannel.invokeMethod('initializePaystack', paystackKey);
   }
 }

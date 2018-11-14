@@ -1,5 +1,7 @@
 package tech.itswisdomagain.paystackflutter;
 
+import java.util.HashMap;
+
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
@@ -16,10 +18,23 @@ public class PaystackFlutterPlugin implements MethodCallHandler {
 
   @Override
   public void onMethodCall(MethodCall call, Result result) {
-    if (call.method.equals("getPlatformVersion")) {
+    switch (call.method) {
+      case "initializePaystack":
+        this.initializePaystack(call.arguments.toString());
+        break;
+    }
+    if (call.method.equals("initializePaystack")) {
       result.success("Android " + android.os.Build.VERSION.RELEASE);
     } else {
       result.notImplemented();
     }
+  }
+
+  private void initializePaystack(String paystackKey) {
+
+  }
+
+  private void chargeCard(HashMap<String, Object> cardObj, HashMap<String, Object> transactionObj) {
+
   }
 }
