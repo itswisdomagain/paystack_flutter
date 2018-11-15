@@ -14,6 +14,7 @@ Paystack SDK for Flutter. Accept Payments on Android and iOS apps built with Flu
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
+  s.dependency 'Paystack'
   s.dependency 'Flutter'
 
   s.ios.deployment_target = '8.0'

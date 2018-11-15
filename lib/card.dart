@@ -1,12 +1,12 @@
 class Card {
   String cardNumber;
-  String cvv;
+  String cvc;
   int expiryMonth;
   int expiryYear;
 
-  Card(String cardNumber, String cvv, int expiryMonth, int expiryYear) {
+  Card(String cardNumber, String cvc, int expiryMonth, int expiryYear) {
     this.cardNumber = cardNumber;
-    this.cvv = cvv;
+    this.cvc = cvc;
     this.expiryMonth = expiryMonth;
     this.expiryYear = expiryYear;
   }
