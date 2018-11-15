@@ -4,9 +4,9 @@
 Pod::Spec.new do |s|
   s.name             = 'paystack_flutter'
   s.version          = '0.0.1'
-  s.summary          = 'Paystack SDK for Flutter.'
+  s.summary          = 'Paystack Flutter Plugin'
   s.description      = <<-DESC
-Paystack SDK for Flutter. Accept Payments on Android and iOS apps built with Flutter.
+Flutter plugin for Paystack. Accept payments on Android and iOS apps built with Flutter
                        DESC
   s.homepage         = 'https://github.com/itswisdomagain/paystack_flutter'
   s.license          = { :file => '../LICENSE' }

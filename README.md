@@ -54,3 +54,6 @@ initPayment() {
       });
 }
 ```
+## Contributing
+
+Contributions are most welcome. You could improve this documentation, add method to support more Paystack features or just clean up the code. Just do your thing and create a PR. This started out as a quick work to achieve paystack payments on Android and iOS. A lot could have been done better.
